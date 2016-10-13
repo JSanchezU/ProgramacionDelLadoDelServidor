@@ -1,0 +1,19 @@
+{
+  "name": "tarea2",
+  "version": "1.0.0",
+  "description": "Form con node",
+  "main": "\u001b[D\u001b[Dform.html)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/Javierimperial/ProgramacionDelLadoDelServidor/tree/master/tarea2"
+  },
+  "author": "Javier Sanchez",
+  "license": "ISC",
+  "dependencies": {
+    "formidable": "^1.0.17"
+  }
+}
