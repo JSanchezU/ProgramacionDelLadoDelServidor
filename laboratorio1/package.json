@@ -1,0 +1,21 @@
+{
+  "name": "laboratorio1",
+  "version": "1.0.0",
+  "description": "Laboratorio 1",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Javierimperial/ProgramacionDelLadoDelServidor/tree/master/laboratorio1"
+  },
+  "author": "Javier",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "formidable": "^1.0.17",
+    "nodemailer": "^2.6.4"
+  }
+}
