@@ -1,20 +1,7 @@
 var http = require('http');
-var nodemailer = require("nodemailer");
 var fs = require('fs');
 var formidable = require("formidable");
 var util = require('util');
-
-var nodemailer = require('nodemailer');
-var smtpTransport = require('nodemailer-smtp-transport');
- 
-var transporter = nodemailer.createTransport(smtpTransport({
-   host: 'localhost',
-   port: 8080,
-   auth: {
-       user: 'username',
-       pass: 'password'
-   }
-}));
 
 var server = http.createServer(function (req, res) {
     if (req.method.toLowerCase() == 'get') {
@@ -39,7 +26,7 @@ function displayForm(res) {
 function processAllFieldsOfTheForm(req, res) {
     var form = new formidable.IncomingForm();
 
-    form.parse(req, function (err, fields) {
+    form.parse(req, function (err, fields, files) {
         //Store the data from the fields in your data store.
         //The data store could be a file or database or any other store based
         //on your application.
