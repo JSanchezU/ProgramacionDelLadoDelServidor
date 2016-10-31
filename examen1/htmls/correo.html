@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Correo</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+      <form method="post" action="/">
+         <fieldset>
+            <label for="user">Nombre Completo:</label>
+            <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Nombre Completo" />
+            <br />
+            <label for="numero_casa">Numero de casa:</label>
+            <input type="text" id="numero_casa" name="numero_casa" placeholder="Numero de casa" />
+            <br />
+            <label for="cobro_regular">Cobro regular: Seguridad Y Vigilancia:</label>
+            <input type="number" id="cobro_regular" name="cobro_regular" placeholder="35000" disabled/>
+            <br />
+            <label for="user">Cobro extraordinario: Salon de eventos</label>
+            <br>
+            <input type="radio" name="cobro_extra" value="45000" checked> Medio dia<br>
+            <input type="radio" name="cobro_extra" value="90000"> Dia completo<br>
+            <label for="user">Cobro de Camaras de seguridad en la comunidad ( El monto de desee, pero debe ser mayor a 5000 colones):</label>
+            <input type="number" id="cobro_camaras" name="cobro_camaras" placeholder="5000" />
+            <br />
+            <label for="user">Cobro de proyecto comun de red inalambrica (El monto que se desee):</label>
+            <input type="number" id="cobro_red" name="cobro_red" />
+            <br />
+            <label for="user">Cobro de señalizacion de la calles internas (El monto que se desee):</label>
+            <input type="number" id="cobro_calles" name="cobro_calles" />
+            <br />
+            <label for="user">Donacion de fiesta de nilos de la comunidad (El monto que se desee):</label>
+            <input type="number" id="donacion_fiesta" name="donacion_fiesta" />
+            <br />
+            <label for="user">Donacion de ayuda a vecino con escasos recursos (El monto que se desee):</label>
+            <input type="number" id="donacion_vecino" name="donacion_vecino" />
+            <br />
+            <label for="user">Observacion que desea brindar:</label>
+            <input type="text" id="observacion" name="observacion" placeholder="Observacion" />
+            <br />
+            <label for="user">Banco donde va a realizar el pago:</label>
+            <br>
+            <input type="radio" name="banco" value="Bac" checked> Bac<br>
+            <input type="radio" name="banco" value="Bn"> Bn<br>
+            <br />
+            <label for="user">Observacion que desea brindar:</label>
+            <input type="text" id="user" name="user" />
+            <br />
+            
+            <input type="submit" value="enviar">
+         </fieldset>
+      </form>
+   </body>
+</html>
